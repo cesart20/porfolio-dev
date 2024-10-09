@@ -1,0 +1,52 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  	{
+    date: "Actualmente...",
+    title: "Desarrollador Frontend",
+    company: "Banco Continental",
+    description:
+    "Responsable de toda la parte Frontend, componentes y utilidades para la creación del sistema interno. Integración y creación de API REST con C# y .NET manejo de base de datos Oracle, PostgreSQL y herramientas PLSQL, Azure DevOps (Repos, Pipelines).",
+    // link: "https://twitch.tv/midudev",
+  },
+  {
+    date: "Junio 2024",
+    title: "Desarrollador Frontend",
+    company: "Encom S.A.",
+    description:
+    "Responsable de toda la parte Frontend, componentes y utilidades para la creación, desarrollo de paginas web y sistema interno. Integración de medios de pagos como QR, Tarjetas, Debitos Automatico y despliegue. Principal herramienta utilizado HTML, CSS, JS, Bootstrap, React, Next, PHP, Laravel.",
+    // link: "https://twitch.tv/midudev",
+  },
+  {
+    date: "Octubre 2022",
+    title: "Desarrollador Web",
+    company: "Deep Mind",
+    description:
+      "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de paginas web. Mejora de SEO en la entrega de la web. Implantación de medidas de integración continua y despliegue. Principal herramienta utilizado Wordpress, HTML, CSS, JS, Bootstrap.",
+  },
+  {
+    date: "Marzo 2020",
+    title: "Soporte a Usuarios",
+    company: "TX Paraguay",
+    description:
+      "Responsable del soporte a usuario y capacitación para la implementación de un sistema para la municipalidad de Asunción.",
+  },
+  {
+    date: "Junio 2019",
+    title: "Tecnico en informatica",
+    company: "Constructora Ingavi S.A.",
+    description:
+      "Responsable de todo el mantenimiento de computadoras de la empresa, soporte a usuarios.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
